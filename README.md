@@ -31,6 +31,6 @@ Any other ABXD plugin you try to import probably won't work.
 The thing is, that doesn't exist. You're not able to update from any other board software at this time with an official tool. Sorry. If you can manage to do it yourself, tell us!
 
 ## Credits
-Tierage -- Programming, theme design
-MrRean -- Programming, porting plugins
-StapleButter -- Creating the original Blargboard
+**Tierage** -- Programming, theme design<br>
+**MrRean** - Programming, porting plugins<br>
+**StapleButter** -- Creating the original Blargboard we all regret- er, love :D
