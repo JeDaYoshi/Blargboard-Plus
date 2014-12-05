@@ -24,7 +24,7 @@
 					{if $loguserid}
 					{if HasPermission('admin.viewadminpanel')}
 					<span class="navButton">
-						<a href="{actionLink page='admin'}">Dashboard</a>
+						<a href="{actionLink page='dashboard'}">Dashboard</a>
 					</span>
 					{/if}
 					<div id="userMenuContainer" class="dropdownContainer">
