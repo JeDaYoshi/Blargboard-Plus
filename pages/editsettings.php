@@ -27,9 +27,9 @@ if(!ctype_alnum($plugin))
 	Kill(__("No."));
 
 if($plugin == "main")
-	MakeCrumbs(array(actionLink("admin") => __("Admin"), '' => __("Edit settings")));
+	MakeCrumbs(array(actionLink("dashboard") => __("Dashboard"), '' => __("Edit settings")));
 else
-	MakeCrumbs(array(actionLink("admin") => __("Admin"), actionLink("pluginmanager") => __("Plugin manager"), '' => $plugins[$plugin]['name']));
+	MakeCrumbs(array(actionLink("dashboard") => __("Dashboard"), actionLink("pluginmanager") => __("Plugin manager"), '' => $plugins[$plugin]['name']));
 
 $settings = Settings::getSettingsFile($plugin);
 $oursettings = Settings::$settingsArray[$plugin];
@@ -72,7 +72,7 @@ if(isset($_POST["_plugin"]))
 		if(isset($_POST["_exit"]))
 		{
 			if($plugin == "main")
-				die(header("Location: ".actionLink("admin")));
+				die(header("Location: ".actionLink("dashboard")));
 			else
 				die(header("Location: ".actionLink("pluginmanager")));
 		}

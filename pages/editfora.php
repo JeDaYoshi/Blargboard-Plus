@@ -9,7 +9,7 @@ $title = __("Edit forums");
 
 CheckPermission('admin.editforums');
 
-MakeCrumbs(array(actionLink("admin") => __("Admin"), actionLink("editfora") => __("Edit forum list")));
+MakeCrumbs(array(actionLink("dashboard") => __("Dashboard"), actionLink("editfora") => __("Edit forum list")));
 
 /**
 	Okay. Much like the category editor, now the action is specified by $_POST["action"].

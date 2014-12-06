@@ -16,7 +16,7 @@ if (isset($_GET['uid']))
 	if ($targetrank > $loguserGroup['rank'])
 		Kill(__('You may not edit permissions for this user.'));
 	
-	MakeCrumbs(array(actionLink('admin') => __('Admin'), 
+	MakeCrumbs(array(actionLink('dashboard') => __('Dashboard'), 
 		'' => __('Edit permissions for user: ').htmlspecialchars($user['displayname']?$user['displayname']:$user['name'])));
 }
 else if (isset($_GET['gid']))

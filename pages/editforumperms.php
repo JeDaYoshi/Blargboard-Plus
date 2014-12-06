@@ -12,7 +12,7 @@ if (isset($_GET['fid']))
 	$forum = Fetch(Query("SELECT title FROM {forums} WHERE id={0}", $id));
 	if (!$forum) Kill(__('Invalid forum ID.'));
 	
-	MakeCrumbs(array(actionLink('admin') => __('Admin'), 
+	MakeCrumbs(array(actionLink('dashboard') => __('Dashboard'), 
 		'' => __('Edit permissions for forum: ').htmlspecialchars($forum['title'])));
 }
 else

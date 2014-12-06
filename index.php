@@ -116,14 +116,10 @@ setLastActivity();
 require(__DIR__.'/layout/userpanel.php');
 require(__DIR__.'/layout/menus.php');
 
-
-
-
 //=======================
 // Notification bars
 
 $notifications = getNotifications();
-
 
 //=======================
 // Misc stuff
@@ -192,10 +188,8 @@ $perfdata = 'Page rendered in '.sprintf('%.03f',microtime(true)-$starttime).' se
 	
 	<?php if ($mobileLayout) { ?>
 	<meta name="viewport" content="user-scalable=yes, initial-scale=1.0, width=device-width">
-	<script type="text/javascript" src="<?php echo resourceLink('js/mobile.js'); ?>"></script>
 	<?php if ($oldAndroid) { ?>
 	<style type="text/css"> 
-	#mobile-sidebar { height: auto!important; max-height: none!important; } 
 	#realbody { max-height: none!important; max-width: none!important; overflow: scroll!important; } 
 	</style>
 	<?php } ?>

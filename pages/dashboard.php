@@ -1,5 +1,5 @@
 <?php
-//  Blargboard -- Admin Dashboard
+//  Blargboard Plus - Dashboard
 
 if (!defined('BLARG')) die();
 
@@ -8,7 +8,7 @@ CheckPermission('admin.viewadminpanel');
 
 $title = __("Dashboard");
 
-MakeCrumbs(array(actionLink("admin") => __('Admin')));
+MakeCrumbs(array(actionLink("dashboard") => __('Dashboard')));
 
 
 if (function_exists('curl_init'))
@@ -45,6 +45,6 @@ if (HasPermission('admin.ipsearch'))		$adminTools[] = actionLinkTag(__("<button>
 
 $bucket = "adminpanel"; include(BOARD_ROOT."lib/pluginloader.php");
 
-RenderTemplate('adminpanel', array('adminTools' => $adminTools, 'adminConfig' => $adminConfig));
+RenderTemplate('dashboard', array('adminTools' => $adminTools, 'adminConfig' => $adminConfig));
 
 ?>

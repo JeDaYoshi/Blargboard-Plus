@@ -3,17 +3,15 @@ if (!defined('BLARG')) die();
 
 CheckPermission('admin.viewlog');
 
-MakeCrumbs(array(actionLink("admin") => __("Admin"), actionLink("log") => __("Log")));
+MakeCrumbs(array(actionLink("dashboard") => __("Dashboard"), actionLink("log") => __("Log")));
 
-//$here = "http://helmet.kafuka.org/nikoboard";
 $full = GetFullURL();
 $here = substr($full, 0, strrpos($full, "/"))."/";
-$there = "./"; //"/";
+$there = "./";
 
 $logR = Query("select * from {reports} order by time desc");
 while($item = Fetch($logR))
 {
-	//print $item['text'];
 	$blar = $item['text'];
 	$blar = htmlspecialchars($blar);
 	$blar = str_replace("[g]", "", $blar);

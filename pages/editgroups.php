@@ -4,7 +4,7 @@ if (!defined('BLARG')) die();
 CheckPermission('admin.editgroups');
 
 $title = __('Edit groups');
-MakeCrumbs(array(actionLink('admin') => __('Admin'), '' => __('Edit groups')));
+MakeCrumbs(array(actionLink('dashboard') => __('Dashboard'), '' => __('Edit groups')));
 
 $gtypes = array(
 	0 => __('Primary'),

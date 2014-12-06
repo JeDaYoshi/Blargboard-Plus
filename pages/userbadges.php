@@ -3,7 +3,7 @@ if (!defined('BLARG')) die();
 
 CheckPermission('admin.assignbadges');
 
-$title = __("User Badges Manager");
+$title = __("Badge Manager");
 
 if($_POST['action'] == __("Add"))
 {
