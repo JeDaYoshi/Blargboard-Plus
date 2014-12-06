@@ -54,7 +54,7 @@ if (!defined('BLARG')) die();
 		),
 		"defaultTheme" => array (
 			"type" => "theme",
-			"default" => "blargboard",
+			"default" => "stone",
 			"name" => "Default theme",
 			'category' => 'Board Display'
 		),
@@ -210,13 +210,13 @@ if (!defined('BLARG')) die();
 		
 		'homepageText' => array(
 			'type' => 'texthtml',
-			'default' => 'Welcome to Blargboard.<br><br>Fill this with relevant info.',
+			'default' => 'Welcome to your new Blargboard Plus board.',
 			'name' => 'Homepage contents',
 			'category' => 'Homepage contents',
 		),
 		'faqText' => array(
 			'type' => 'texthtml',
-			'default' => 'Blargboard FAQ. Put your rules and stuff here.',
+			'default' => '',
 			'name' => 'FAQ contents',
 			'category' => 'FAQ contents',
 		),
