@@ -1,5 +1,5 @@
 /* 
-	Blargboard default data set
+	Blargboard Plus default data set
 	
 	* sample category/forum accessible to everyone
 	* usergroups and their permissions
@@ -254,6 +254,7 @@ INSERT INTO `{$dbpref}permissions` (`applyto`, `id`, `perm`, `arg`, `value`) VAL
 (0, 4, 'admin.manageipbans', 0, 1),
 (0, 4, 'admin.viewadminnotices', 0, 1),
 (0, 4, 'admin.viewadminpanel', 0, 1),
+(0, 4, 'admin.assignbadges', 0, 1),
 (0, 4, 'admin.viewallranks', 0, 1),
 (0, 4, 'admin.viewips', 0, 1),
 (0, 4, 'admin.viewlog', 0, 1),
