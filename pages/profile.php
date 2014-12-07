@@ -250,22 +250,18 @@ RenderTemplate('profile', array(
 	'commentField' => $commentField,
 	'pagelinks' => $pagelinks));	
 
-	
-// Disabling sample post for now.
-// ================================
-//if (!$mobileLayout)
-//{
-//	$previewPost['text'] = Settings::get("profilePreviewText");
-//
-//	$previewPost['num'] = 0;
-//	$previewPost['id'] = 0;
-//
-//	foreach($user as $key => $value)
-//		$previewPost['u_'.$key] = $value;
-//
-//	MakePost($previewPost, POST_SAMPLE);
-//}
-//=================================
+if (!$mobileLayout)
+{
+	$previewPost['text'] = Settings::get("profilePreviewText");
+
+	$previewPost['num'] = 0;
+	$previewPost['id'] = 0;
+
+	foreach($user as $key => $value)
+		$previewPost['u_'.$key] = $value;
+
+	MakePost($previewPost, POST_SAMPLE);
+}
 
 $links = array();
 
