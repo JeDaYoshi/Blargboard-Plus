@@ -1,7 +1,7 @@
 # Blargboard Plus
 Blargboard Plus is a board software written in PHP and MySQL. It's pretty easy to use, has a good set of features, and is built off of [Blargboard](http://blargboard.kuribo64.net), a board software of the same concept.
 
-You can access the official DevBoard for Blargboard Plus [here](http://tierage.net/board). A stable download of Blargboard Plus is available in [this forum thread](http://www.tierage.net/board/?page=thread&id=5). This repo is for unstable development. Feel free to download this to use for your board, but expect it to explode in your fa- er, have a few issues. Yeah.
+To learn more about Blargboard Plus, head over to its [official website](http://bbp.github.io). A stable download of Blargboard Plus is available in [this forum thread](http://www.tierage.net/board/?page=thread&id=5). This repo is for unstable development. Feel free to download this to use for your board, but expect it to explode in your fa- er, have a few issues. Yeah.
 
 ## Installation
 Upload the files of Blargboard Plus to an FTP server, and that's really it. Make sure to have a MySQL database handy.
