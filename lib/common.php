@@ -10,7 +10,7 @@ error_reporting(E_ALL ^ E_NOTICE | E_STRICT);
 
 
 	
-define('BLARG_VERSION', '1.1');
+define('BLARG_VERSION', '1.0.1');
 
 define('BOARD_ROOT', dirname(__DIR__).'/');
 define('DATA_DIR', BOARD_ROOT.'data/');
