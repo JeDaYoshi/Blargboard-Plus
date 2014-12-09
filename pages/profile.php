@@ -151,8 +151,6 @@ foreach ($usgroups as $sgroup)
 }
 $temp[__("Power")] = $glist;
 
-$temp[__("Karma")] = $score;
-
 $temp[__("Badges")] = $badgers;
 
 $temp[__("Registration date")] = format("{0} ({1} ago)", formatdate($user['regdate']), TimeUnits($daysKnown*86400));
